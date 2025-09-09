@@ -1,12 +1,16 @@
 import java.util.Scanner;
 
-public class program5 {
+public class program12 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a number: ");
         int n = sc.nextInt();
-        System.out.println("Square: " + (n * n));
-        System.out.println("Cube: " + (n * n * n));
+        int sum = 0;
+        while (n > 0) {
+            sum += n % 10;
+            n /= 10;
+        }
+        System.out.println("Sum of digits: " + sum);
         sc.close();
     }
 }

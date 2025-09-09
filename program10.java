@@ -2,18 +2,10 @@ import java.util.Scanner;
 
 public class program10 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-
-        System.out.print("Enter distance in kilometers: ");
-        double kilometers = scanner.nextDouble();
-
-        
-        double miles = kilometers * 0.621371;
-
-    
-        System.out.println(kilometers + " kilometers is equal to " + miles + " miles.");
-
-        scanner.close();
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int n = sc.nextInt();
+        System.out.println((n % 3 == 0 && n % 5 == 0) ? "Divisible by both 3 and 5" : "Not divisible by both");
+        sc.close();
     }
 }

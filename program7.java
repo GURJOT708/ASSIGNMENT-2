@@ -2,18 +2,13 @@ import java.util.Scanner;
 
 public class program7 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.print("Enter the length of the rectangle: ");
-        double length = scanner.nextDouble();
-
-        System.out.print("Enter the width of the rectangle: ");
-        double width = scanner.nextDouble();
-
-        double perimeter = 2 * (length + width);
-
-        System.out.println("Perimeter of the rectangle = " + perimeter);
-
-        scanner.close();
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter marks: ");
+        int marks = sc.nextInt();
+        if (marks >= 90) System.out.println("Grade: A");
+        else if (marks >= 75) System.out.println("Grade: B");
+        else if (marks >= 50) System.out.println("Grade: C");
+        else System.out.println("Fail");
+        sc.close();
     }
 }

@@ -2,18 +2,12 @@ import java.util.Scanner;
 
 public class program8 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.print("Enter the base: ");
-        double base = scanner.nextDouble();
-
-        System.out.print("Enter the exponent: ");
-        double exponent = scanner.nextDouble();
-
-        double result = Math.pow(base, exponent);
-
-        System.out.println(base + " raised to the power of " + exponent + " = " + result);
-
-        scanner.close();
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int n = sc.nextInt();
+        if (n > 0) System.out.println("Positive");
+        else if (n < 0) System.out.println("Negative");
+        else System.out.println("Zero");
+        sc.close();
     }
 }
